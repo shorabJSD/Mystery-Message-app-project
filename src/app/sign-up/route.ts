@@ -80,9 +80,10 @@ export async function POST(request: Request){
     } catch (error) {
         console.error("Error, registration failed", error);
         return Response.json({
-            status: 500,
             success: false,
-            message: "Something went wrong",
+            message: "Something went wrong"
+        }, {
+            status: 500
         })
     }
 }
