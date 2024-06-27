@@ -15,7 +15,6 @@ export async function POST(request: Request){
               message: "Username already exists",
           })
        }
-       
 
        const existingUserEmail = await UserModel.findOne({email: email});
        const verifyCode = Math.floor(100000 * Math.random() * 900000).toString();
@@ -40,7 +39,6 @@ export async function POST(request: Request){
         expireyDate.setHours(expireyDate.getHours() + 1);
         const hashedPassword = await bcriptjs.hash(password, 10);
 
-
         const newUser = new UserModel({
          username,
          email,
@@ -51,10 +49,10 @@ export async function POST(request: Request){
          isAcceptionMessage: true,
          message:[]
         })
-          
+
         await newUser.save();
     }
-    
+
     //email verification;
    const emailResponse =  await sendVerificationEmail(
         email,
