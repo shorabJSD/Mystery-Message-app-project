@@ -8,8 +8,7 @@ export const usernameValidation = z
        .string()
        .min(3, "Username must be at least 3 characters!")
        .max(20, "Username must be more than 20 characters!")
-       .regex(/^(?![_-])[a-zA-Z0-9_-]{3,20}(?<![_-])$/
-, "Username cant be contain special characters!")
+       .regex(/^[a-zA-Z0-9_]+$/, "Username cant be contain special characters!")
 
 
 //signup validation through the zod laibraries
