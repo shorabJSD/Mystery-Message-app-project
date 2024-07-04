@@ -19,3 +19,6 @@ export const signUpSchemaValidation = z.object({
     password:z.string().min(6, {message:"Password must be at least 6 characters"}).max(10, {message: "Passwod must be al leat two characters"})
 })
 
+
+ 
+

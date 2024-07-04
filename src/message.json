@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Welcome",
+      "content": "Welcome to our service! We're glad to have you.",
+      "messageReceiveTime": "2024-07-05T08:00:00Z"
+    },
+    {
+      "title": "Reminder",
+      "content": "Don't forget to check out our latest features.",
+      "messageReceiveTime": "2024-07-05T12:00:00Z"
+    },
+    {
+      "title": "Thank You",
+      "content": "Thank you for using our service. We appreciate your support.",
+      "messageReceiveTime": "2024-07-05T16:00:00Z"
+    }
+  ]
